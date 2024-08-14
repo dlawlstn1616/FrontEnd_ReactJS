@@ -32,7 +32,7 @@ const ListEmployeeComponent = () => {
         console.log(id);
 
         deleteEmployee(id)
-        .then((response) =>{
+        .then(() =>{
             getAllEmployees();
         }).catch(error => {
             console.error(error);
